@@ -1,0 +1,43 @@
+package model;
+
+public class Message {
+
+	private int id;
+	private String guestName;
+	private String password;
+	private String message;
+	private int themeId;
+	public int getThemeId() {
+		return themeId;
+	}
+	public void setThemeId(int themeId) {
+		this.themeId = themeId;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getGuestName() {
+		return guestName;
+	}
+	public void setGuestName(String guestName) {
+		this.guestName = guestName;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	public boolean hasPassword() {
+		return password != null && !password.isEmpty();
+	}
+}
